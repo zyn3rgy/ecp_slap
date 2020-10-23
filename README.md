@@ -39,6 +39,7 @@ but you are still not able to verify successful code execution, consider executi
 ## Manual Validation and Exploitation of Vulnerability 
 
 Start with the [MSRC security advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0688)  which will include specifics about patches and vulnerable versions of on-prem Exchange. Cross-referencing patches with [Microsoft's Exchange build numbers](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019) will help determine vulnerability.
+To manually reproduce exploitation of this vulneribility, follow the incredible [ZDI write-up](https://www.thezdi.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys).
 
 
 
@@ -51,5 +52,5 @@ Start with the [MSRC security advisory](https://portal.msrc.microsoft.com/en-US/
 
 ## Credits
 
-- Simon Zuckerbraun - for the awesome [write-up](https://www.thezdi.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys) explaining how this exploit works and how easy practical exploitation can be
+- Simon Zuckerbraun / ZDI - for the awesome [write-up](https://www.thezdi.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys) explaining how this exploit works and how easy practical exploitation can be
 - [actuated](https://github.com/actuated) - for the troubleshooting, brainstorming, and question answering while scripting this out
