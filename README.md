@@ -42,6 +42,8 @@ but you are still not able to verify successful code execution, consider executi
 ## To-Do
 
 - scan - add functionality to account for the authenticated Exchange build number
+- scan & exploit - account for potential NTLMSSP authentication for non-standard Exchange instances
+  - code written, logic for this needs to be added to check and authenticate differently in this case
 
 
 ## Credits
