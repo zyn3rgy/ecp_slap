@@ -1,5 +1,6 @@
+
 # ecp_slap
-This proof-of-concept for CVE-2020-0688  includes functions for the scanning and exploitation of a vulnerable on-prem Exchange instance.  
+This proof-of-concept for [CVE-2020-0688](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0688)  includes functions for the scanning and exploitation of a vulnerable on-prem Exchange instance.  
 
 ## Usage
 **scan** - provide credentials and target information to obtain cookies required for exploitation and save them to 'cookies.txt'. Also checks for the exposure of the Exchange Control Panel (ECP) service associated with the targeted Exchange server, attempts authentication, and checks for a match of the appropriate VIEWSTATEGENERATOR value. If authentication is successful, output of the session cookie value for serialized payload will be observed.
@@ -35,14 +36,16 @@ but you are still not able to verify successful code execution, consider executi
 - ping and monitor ICMP 
 
 
+## Manual Validation and Exploitation of Vulnerability 
 
+Start with the [MSRC security advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0688)  which will include specifics about patches and vulnerable versions of on-prem Exchange. Cross-referencing patches with [Microsoft's Exchange build numbers](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019) and help determine vulnerability.
 
 
 
 ## To-Do
 
 - scan - add functionality to account for the authenticated Exchange build number
-- scan & exploit - account for potential NTLMSSP authentication for non-standard Exchange instances
+- scan & exploit - account for potential NTLMSSP during non-standard on-prem Exchange authentication
   - code written, logic for this needs to be added to check and authenticate differently in this case
 
 
