@@ -27,7 +27,7 @@ exploit - Exploitation of a vulnerable Exchange server:
 
 If you've verified the version of on-prem Exchange you are attempting to exploit:
 1. has ECP authentication exposed from the internal or external network perspective you are testing from 
-2. your credentials have permission to access ECP
+2. allows the credentials you have to access ECP specifically (https://mail.corp.com/ecp)
 3. is a build number which is vulnerable
 
 but you are still not able to verify successful code execution, consider executing simple commands to evaluate if the code execution is working, such as:
@@ -41,7 +41,9 @@ but you are still not able to verify successful code execution, consider executi
 Start with the [MSRC security advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0688)  which will include specifics about patches and vulnerable versions of on-prem Exchange. Cross-referencing patches with [Microsoft's Exchange build numbers](https://docs.microsoft.com/en-us/exchange/new-features/build-numbers-and-release-dates?view=exchserver-2019) will help determine vulnerability.
 To manually reproduce exploitation of this vulneribility, follow the incredible [ZDI write-up](https://www.thezdi.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys).
 
+## GoLang Setup and Compilation
 
+If you choose to compile this project from source, instead of snagging [the compiled release](https://github.com/zyn3rgy/ecp_slap/releases/tag/1.0.0https://github.com/zyn3rgy/ecp_slap/releases/tag/1.0.0), setting up your Go environment is often as easy as installing GoLang and setting the approriate environment variable. The steps to do so are [documented here](https://github.com/zyn3rgy/ecp_slap/releases/tag/1.0.0).
 
 ## To-Do
 
