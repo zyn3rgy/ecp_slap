@@ -43,7 +43,7 @@ To manually reproduce exploitation of this vulneribility, follow the incredible 
 
 ## GoLang Setup and Compilation
 
-If you choose to compile this project from source, instead of snagging [the compiled release](https://github.com/zyn3rgy/ecp_slap/releases/tag/1.0.0https://github.com/zyn3rgy/ecp_slap/releases/tag/1.0.0), setting up your Go environment is often as easy as installing GoLang and setting the approriate environment variable. The steps to do so are [documented here](https://github.com/zyn3rgy/ecp_slap/releases/tag/1.0.0).
+If you choose to compile this project from source, instead of snagging [the compiled release](https://github.com/zyn3rgy/ecp_slap/releases/tag/1.0.0), setting up your Go environment is often as easy as installing GoLang and setting the approriate environment variable. The steps to do so are [documented here](https://medium.com/@saumya.ranjan/how-to-install-go-language-and-set-environment-variables-properly-573222f9ae91).
 
 ## To-Do
 
